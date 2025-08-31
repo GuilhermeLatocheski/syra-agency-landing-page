@@ -1,0 +1,38 @@
+/* src/sections/Servicos.module.css */
+.servicos {
+  padding: 80px 3%;
+  text-align: center;
+  background-color: #111827;
+  color: #a0a0a0;
+}
+
+.servicos h2 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #FFFFFF;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #1F2937;
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 3px solid #C084FC;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(168, 85, 247, 0.2);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #C084FC;
+  margin-bottom: 15px;
+}

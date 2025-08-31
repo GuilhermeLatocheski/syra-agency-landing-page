@@ -1,0 +1,68 @@
+/* src/sections/Diagnostico.module.css */
+
+.diagnostico {
+  padding: 80px 3%;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+/* --- ESTILO ADICIONADO PARA PADRONIZAR O TÍTULO --- */
+.diagnostico h2 {
+  font-size: 3rem;
+  color: #C084FC; /* A cor roxa de destaque */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.subtitulo {
+  max-width: 600px;
+  margin: 0 auto 40px auto; /* Centraliza e adiciona espaço abaixo do subtítulo */
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #d1d5db; /* Um cinza um pouco mais claro para legibilidade */
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #1F2937;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form input:focus, .form textarea:focus {
+  outline: none;
+  border-color: #C084FC; /* Destaque roxo ao focar no campo */
+}
+
+.form button {
+  padding: 15px;
+  background-color: #9333EA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #C084FC;
+}
+
+.status {
+  margin-top: 20px;
+  color: #C084FC;
+}

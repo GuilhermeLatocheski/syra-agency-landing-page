@@ -1,0 +1,66 @@
+/* src/sections/ContentSection.module.css */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 3%;
+  gap: 50px;
+  background-color: #111;
+  color: #f0f0f0;
+}
+
+.sectionRight {
+  flex-direction: row-reverse;
+}
+
+.bgDark {
+  background-color: #0A0A0A;
+}
+
+.content {
+  flex: 1;
+}
+
+/* --- NOVA REGRA PARA ALINHAR O TEXTO À DIREITA NA SEÇÃO MISSÃO --- */
+.sectionRight .content {
+  text-align: right;
+}
+
+.content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #a855f7;
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.imageContainer img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    padding: 60px 3%;
+    text-align: center;
+  }
+  .sectionRight {
+    flex-direction: column;
+  }
+  /* O 'text-align: center' acima já cuidará do alinhamento no mobile */
+  .content h2 {
+    font-size: 2.5rem;
+  }
+  .sectionRight .content {
+  text-align: center;
+}
+}

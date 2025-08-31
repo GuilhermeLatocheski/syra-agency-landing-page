@@ -1,0 +1,63 @@
+/* src/sections/HeroSection.module.css */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Adicionado para agrupar o texto */
+.heroContent {
+  z-index: 1;
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+/* --- ESTILOS NOVOS PARA O SUBTÍTULO --- */
+.subtitle {
+  color: #D8B4EE; /* A cor roxa do projeto */
+  font-size: 1.5rem;
+  font-weight: 400; /* Um peso mais leve que o do título */
+  margin-top: 15px; /* Espaço entre o título e o subtítulo */
+  letter-spacing: 1px; /* Um leve espaçamento para dar elegância */
+}
+
+
+/* --- AJUSTES DE RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  
+  /* Adicionado para o subtítulo ser responsivo */
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}

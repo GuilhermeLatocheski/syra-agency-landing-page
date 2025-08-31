@@ -1,0 +1,77 @@
+/* src/components/Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(10, 10, 10, 0.7);
+  
+  -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
+  backdrop-filter: blur(10px);
+  
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.logo {
+  height: 60px;
+  z-index: 1001; /* Garante que o logo fique acima do menu mobile */
+}
+
+.navbar a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #C084FC;
+}
+
+.menuButton {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background-color: rgba(10, 10, 10, 0.9);
+    
+    -webkit-backdrop-filter: blur(15px); /* Para compatibilidade com Safari */
+    backdrop-filter: blur(15px);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.4s ease-in-out;
+  }
+
+  .navbarOpen {
+    right: 0;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+  }
+}
