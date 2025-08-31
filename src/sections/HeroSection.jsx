@@ -6,7 +6,7 @@ import backgroundVideo from '../assets/background-video.mp4';
 const HeroSection = () => {
   return (
     <section id="home" className={styles.hero}>
-      <video autoPlay loop muted className={styles.video}>
+      <video autoPlay loop muted playsInline className={styles.video}>
         <source src={backgroundVideo} type="video/mp4" />
         Seu navegador não suporta vídeos.
       </video>

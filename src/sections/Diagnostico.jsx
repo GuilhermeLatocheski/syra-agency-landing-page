@@ -11,7 +11,7 @@ const Diagnostico = () => {
     const data = new FormData(form);
     
     try {
-      const response = await fetch("https://formspree.io/f/xvgbgqne", { // <-- COLE SEU ENDPOINT AQUI
+      const response = await fetch("https://formspree.io/f/mqadbdwz", { // <-- COLE SEU ENDPOINT AQUI
         method: "POST",
         body: data,
         headers: {
