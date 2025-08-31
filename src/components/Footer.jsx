@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.info}>
         <p>Email: contato@syraagency.com</p>
-        <p>Telefone: (XX) XXXX-XXXX</p>
+        <p>Telefone: (XX) 91234-5678</p>
       </div>
       <div className={styles.social}>
         {/* Adicione ícones de redes sociais aqui */}
